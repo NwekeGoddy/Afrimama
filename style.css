@@ -102,6 +102,12 @@ header {
   outline: none;
 }
 
+.hero-wrapper-button svg {
+  /* font-weight: 500; */
+  width: 25px;
+  height: 25px;
+}
+
 .hero-wrapper-button:after {
   content: "";
   position: absolute;
@@ -180,9 +186,9 @@ header {
 }
 
 /* PRODUCT PAGE BRIEF */
-.productbrief {
-  /* color: #fe6600;*/
-}
+/* .productbrief {
+  color: #fe6600;
+} */
 
 .productbrief-title {
   font-size: 17px;
@@ -222,4 +228,59 @@ header {
   color: #20b303;
   border: 1px solid #20b303;
   transition: 0.5s;
+}
+
+/* ABOUT US */
+.aboutus-wrapper {
+  margin: 0 90px;
+}
+
+.aboutus-brief {
+  font-size: 18px;
+  font-weight: 400;
+  color: #807e7c;
+  margin-bottom: 20px;
+}
+.aboutus-brief-large {
+  font-size: 25px;
+  font-weight: 500;
+  color: #20b303;
+}
+
+.each-aboutus-scroll img {
+  width: 350px;
+  height: 350px;
+  margin: 0 20px 20px 20px;
+  padding: 5px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: 2s;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus-scroll {
+  overflow: hidden;
+  display: flex;
+  height: 350px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.aboutus-scroll div {
+  height: 350px;
+  width: 350px;
+  margin-left: 20px;
+  animation: slide 30s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1500px, 0, 0); /* The image width */
+  }
 }
