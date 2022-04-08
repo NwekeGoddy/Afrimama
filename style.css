@@ -76,13 +76,63 @@ header {
   /* color: #fe6600; */
   text-align: center;
   position: relative;
-  top: 30%;
+  top: 27%;
 }
-.hero-wrapper .welcome {
+.hero-wrapper-welcome {
   font-size: 80px;
+  line-height: 1;
 }
-.hero-wrapper .brief {
+.hero-wrapper-brief {
   font-size: 40px;
+}
+
+.hero-wrapper-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 45px;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  outline: none;
+}
+
+.hero-wrapper-button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #20b303;
+  border-radius: 10px;
+  z-index: -2;
+}
+
+.hero-wrapper-button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #fe6600;
+  transition: all 0.3s;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.hero-wrapper-button:hover {
+  color: #fff;
+}
+
+.hero-wrapper-button:hover:before {
+  width: 100%;
 }
 
 /* GENERAL SECTION HEADER */
@@ -170,6 +220,6 @@ header {
 .productbrief-button:hover {
   background-color: white;
   color: #20b303;
-  border: 2px solid #20b303;
+  border: 1px solid #20b303;
   transition: 0.5s;
 }
