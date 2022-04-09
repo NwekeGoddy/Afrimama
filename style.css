@@ -373,7 +373,6 @@ header {
 
 .footer-wrapper-minisections ul a:hover {
   color: #464443;
-  font-weight: 500;
 }
 
 .footer-wrapper-minisections ul a li {
@@ -381,8 +380,8 @@ header {
 }
 
 .footer-wrapper-minisections a img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   filter: grayscale(1);
   margin-right: 10px;
 }
@@ -390,7 +389,26 @@ header {
 .footer-wrapper-minisections a img:hover {
   filter: none;
   transition: 1s;
-  transform: translateY(10px);
+  animation: wiggle 1s 2ms 1 ease-out none;
+}
+
+.footer-connect {
+  margin-bottom: 10px;
+  /* vertical-align: middle; */
+  display: flex;
+  align-items: center;
+}
+
+.footer-connect-phone,
+.footer-connect-mail {
+  color: #807e7c;
+  text-decoration: none;
+}
+
+.footer-connect-phone:hover,
+.footer-connect-mail:hover {
+  color: #464443;
+  font-weight: 500;
 }
 
 .footer-reserved {
@@ -402,6 +420,17 @@ header {
   font-size: 15px;
   font-weight: 400;
   color: #807e7c;
-  margin-bottom: 20px;
   text-align: center;
+}
+/* ANIMATIONS */
+@keyframes wiggle {
+  0% {
+    transform: rotateZ(0);
+  }
+  50% {
+    transform: rotateZ(10deg);
+  }
+  100% {
+    transform: rotateZ(0);
+  }
 }
