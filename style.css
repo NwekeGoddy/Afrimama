@@ -185,13 +185,24 @@ header {
   border-radius: 2px;
 }
 
+/* .product-image {
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.product-image:hover {
+  transform: scale(1.2);
+} */
+
 .product-image img {
   width: 180px;
   height: 180px;
   margin-right: 10px;
+  /* transition: transform 0.2s; Animation */
 }
 
 /* PRODUCT PAGE BRIEF */
+
 /* .productbrief {
   color: #fe6600;
 } */
@@ -290,6 +301,66 @@ header {
   100% {
     transform: translate3d(-1500px, 0, 0); /* The image width */
   }
+}
+
+/* MISSION SECTION */ /* VISION SECTION */
+.missionvision-wrapper {
+  margin: 0 90px;
+}
+
+.missionvision-wrapper {
+}
+
+.missionvision-wrapper-brief {
+  font-size: 17px;
+  font-weight: 400;
+  color: #807e7c;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.missionvision-largetext {
+  font-size: 22px;
+  font-weight: 500;
+  color: #20b303;
+}
+
+/* TESTIMONY SECTION    */
+.eachtestimony-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin: 30px 90px;
+}
+
+.eachtestimony-section .one {
+  font-size: 17px;
+  font-weight: 400;
+  color: #807e7c;
+  text-align: right;
+}
+
+.eachtestimony-section .two {
+  font-size: 17px;
+  font-weight: 400;
+  color: #807e7c;
+  text-align: right;
+}
+
+.eachtestimony-section .three {
+  font-size: 50px;
+  font-weight: 700;
+  color: #222222;
+  text-align: right;
+}
+
+.eachtestimony-section .four {
+  font-size: 17px;
+  font-weight: 400;
+  color: #807e7c;
+  text-align: right;
 }
 
 /* FOOTER SECTION */
