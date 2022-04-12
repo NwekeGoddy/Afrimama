@@ -128,13 +128,6 @@ header {
   margin: 10px;
 }
 
-/* .nav-link.active,
-.nav-link.active:hover {
-  color: #20b303;
-  border: 1px solid #20b303;
-  border-radius: 20px;
-} */
-
 .nav-link.activenav,
 .nav-link.activenav:hover {
   color: #20b303;
@@ -216,7 +209,6 @@ header {
 }
 
 .hero-wrapper-button svg {
-  /* font-weight: 500; */
   width: 25px;
   height: 25px;
 }
@@ -294,8 +286,8 @@ header {
 @media (max-width: 700px) {
   .section-headers {
     font-size: 20px;
-    padding: 20px 0;
-    margin: 0px 0px 0px 20px;
+    padding: 20px;
+    margin: 0px 0px 20px 0px;
   }
 }
 
@@ -331,15 +323,6 @@ header {
   border-radius: 2px;
 }
 
-/* .product-image {
-  overflow: hidden;
-  margin-right: 10px;
-}
-
-.product-image:hover {
-  transform: scale(1.2);
-} */
-
 .product-image img {
   width: 180px;
   height: 180px;
@@ -347,11 +330,10 @@ header {
   /* transition: transform 0.2s; Animation */
 }
 
-/* PRODUCT PAGE BRIEF */
+@media (max-width: 700px) {
+}
 
-/* .productbrief {
-  color: #fe6600;
-} */
+/* PRODUCT PAGE BRIEF */
 
 .productbrief-title {
   font-size: 17px;
@@ -469,6 +451,21 @@ header {
   font-size: 22px;
   font-weight: 500;
   color: #20b303;
+}
+
+@media (max-width: 700px) {
+  .missionvision-wrapper {
+    margin: 0 50px;
+  }
+
+  .missionvision-wrapper-brief {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .missionvision-largetext {
+    font-size: 17px;
+  }
 }
 
 /* TESTIMONY SECTION    */
@@ -723,6 +720,21 @@ q {
   color: #807e7c;
   text-align: center;
 }
+
+@media (max-width: 900px) {
+  .footer-wrapper {
+    flex-direction: column;
+  }
+
+  .footer-wrapper {
+    padding: 20px 50px;
+  }
+
+  .footer-wrapper-minisections {
+    margin: 10px 0px;
+  }
+}
+
 /* ANIMATIONS */
 @keyframes wiggle {
   0% {
