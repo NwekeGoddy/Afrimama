@@ -330,7 +330,14 @@ header {
   /* transition: transform 0.2s; Animation */
 }
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
+  .each-product-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .each-product {
+    width: 100%;
+  }
 }
 
 /* PRODUCT PAGE BRIEF */
@@ -609,6 +616,18 @@ q {
   .mySlides-images {
     width: 360.96px;
     height: 407.36px;
+  }
+
+  .prev {
+    position: absolute;
+    left: 0;
+  }
+}
+
+@media (max-width: 445px) {
+  .mySlides-images {
+    width: 307px;
+    height: 347.7px;
   }
 }
 
