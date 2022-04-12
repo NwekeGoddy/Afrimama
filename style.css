@@ -301,7 +301,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 40px;
   margin-top: 2em;
 }
 
@@ -332,11 +332,12 @@ header {
 
 @media (max-width: 850px) {
   .each-product-wrapper {
-    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
   }
   .each-product {
     width: 100%;
+    margin: 0 10px 10px 10px;
   }
 }
 
@@ -372,7 +373,7 @@ header {
   border: 1px solid #20b303;
   transition: 0.5s;
   text-align: center;
-  width: 100%;
+  width: 70%;
 }
 
 .productbrief-button:hover {
@@ -380,6 +381,26 @@ header {
   color: #20b303;
   border: 1px solid #20b303;
   transition: 0.5s;
+}
+
+@media (max-width: 550px) {
+  .productbrief-title {
+    font-size: 15px;
+  }
+  .productbrief-text {
+    font-size: 12px;
+  }
+  .productbrief-price {
+    font-size: 15px;
+  }
+  .productbrief-button {
+    font-size: 15px;
+  }
+
+  .each-product {
+    width: 100%;
+    margin: 0 5px 5px 5px;
+  }
 }
 
 /* ABOUT US */
