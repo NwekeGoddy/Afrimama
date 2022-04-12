@@ -27,7 +27,7 @@ html {
   left: 0;
   z-index: 200;
   width: 100vw;
-  height: 100vh;
+  height: 1000vh;
   background: rgba(0, 0, 0, 0.6);
 }
 
@@ -105,6 +105,13 @@ header {
   display: relative;
 }
 
+@media (max-width: 700px) {
+  .logo img {
+    width: 110.4px;
+    height: 34.4px;
+  }
+}
+
 /* NAV LINKS */
 
 .navlinks-wrapper {
@@ -141,10 +148,15 @@ header {
   border-bottom: 3px solid #20b303;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+  .logo img {
+    width: 138px;
+    height: 43px;
+    display: relative;
+  }
   .modal {
     top: 30%;
-    left: 20%;
+    left: 30%;
     width: 40%;
   }
 
@@ -183,6 +195,8 @@ header {
 }
 .hero-wrapper-brief {
   font-size: 40px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .hero-wrapper-button {
@@ -238,6 +252,31 @@ header {
 
 .hero-wrapper-button:hover:before {
   width: 100%;
+}
+
+@media (max-width: 700px) {
+  header {
+    height: 70vh;
+  }
+
+  .hero-wrapper-welcome {
+    font-size: 40px;
+  }
+  .hero-wrapper-brief {
+    font-size: 20px;
+  }
+
+  .hero-wrapper-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 35px;
+    font-size: 15px;
+  }
+
+  .hero-wrapper-button svg {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 /* GENERAL SECTION HEADER */
