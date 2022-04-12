@@ -5,6 +5,7 @@
 /* afrimama red #fe6600 */
 
 /* reset browser default tags */
+
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +15,65 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+/* BACKDROP SECTION */
+.backdrop {
+  display: block;
+  position: fixed;
+  opacity: 1;
+  transition: opacity 0.2s linear;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* MODAL SECTION */
+.modal {
+  display: block;
+  position: fixed;
+  opacity: 1;
+  transform: translateY(-3rem);
+  transition: 1s;
+  z-index: 201;
+  top: 40%;
+  left: 30%;
+  width: 40%;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.modal__title {
+  background-color: #d7dec3;
+  color: #20b303;
+  padding: 20px;
+}
+
+.modal__brief {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.modal__action {
+  font-size: 20px;
+  margin: 20px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #20b303;
+  transition: 1s;
+  border: 1px solid #20b303;
+  border-radius: 5px;
+}
+
+.modal__action:hover {
+  background-color: white;
+  color: #20b303;
 }
 
 /* HEADER SECTION */
@@ -56,8 +116,15 @@ header {
   margin: 10px;
 }
 
-.nav-link.active,
+/* .nav-link.active,
 .nav-link.active:hover {
+  color: #20b303;
+  border: 1px solid #20b303;
+  border-radius: 20px;
+} */
+
+.nav-link.activenav,
+.nav-link.activenav:hover {
   color: #20b303;
   border: 1px solid #20b303;
   border-radius: 20px;
@@ -308,8 +375,8 @@ header {
   margin: 0 90px;
 }
 
-.missionvision-wrapper {
-}
+/* .missionvision-wrapper {
+} */
 
 .missionvision-wrapper-brief {
   font-size: 17px;
@@ -329,7 +396,7 @@ header {
 .eachtestimony-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 50px;
   margin: 30px 90px;
@@ -367,19 +434,19 @@ header {
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  background: #f1f1f1f1;
+  background: #fffffff1;
 }
 
 /* Slides */
 .mySlides {
   display: none;
-  padding: 38px;
+  padding: 0px 38px;
   /* text-align: center; */
 }
 
 .mySlides-images {
-  width: 600px;
-  height: 400px;
+  width: 451.2px;
+  height: 509.2px;
 }
 
 /* Next & previous buttons */
@@ -415,15 +482,15 @@ header {
 /* The dot/bullet/indicator container */
 .dot-container {
   text-align: center;
-  padding: 20px;
-  background: #ddd;
+  padding: 7px;
+  background: rgb(228, 226, 226);
 }
 
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   margin: 0 2px;
   background-color: #20b30334;
   border-radius: 50%;
@@ -449,7 +516,7 @@ q {
 
 /* FOOTER SECTION */
 .footer-main {
-  background-color: #fe660034;
+  background-color: #d7dec3;
 }
 
 .footer-wrapper {

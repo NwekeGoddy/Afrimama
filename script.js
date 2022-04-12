@@ -28,3 +28,15 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+var modalbutton = document.querySelector(".modal__actions");
+var modal = document.querySelector(".modal");
+var backdrop = document.querySelector(".backdrop");
+
+modalbutton.addEventListener("click", function onClick() {
+  modal.style.display = "none";
+  backdrop.style.display = "none";
+  backdrop.style.opacity = "0";
+  modal.style.opacity = "0";
+  console.log("clicked");
+});
