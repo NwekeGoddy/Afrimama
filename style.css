@@ -422,6 +422,12 @@ header {
   animation: slide 30s linear infinite;
 }
 
+@media (max-width: 700px) {
+  .aboutus-content-wrapper {
+    margin: 0 50px;
+  }
+}
+
 @keyframes slide {
   0% {
     transform: translate3d(0, 0, 0);
@@ -459,7 +465,7 @@ header {
   }
 
   .missionvision-wrapper-brief {
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 400;
   }
 
@@ -588,6 +594,22 @@ q {
 /* Add a blue color to the author */
 .author {
   color: cornflowerblue;
+}
+
+@media (max-width: 700px) {
+  .eachtestimony-section {
+    text-align: center;
+    margin: 30px 50px;
+  }
+
+  .eachtestimony-section .three {
+    font-size: 40px;
+  }
+
+  .mySlides-images {
+    width: 360.96px;
+    height: 407.36px;
+  }
 }
 
 /* FOOTER SECTION */
