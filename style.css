@@ -100,10 +100,6 @@ html {
   color: #20b303;
 }
 
-.close {
-  display: none;
-}
-
 .open {
   display: block;
 }
@@ -141,6 +137,79 @@ header {
     width: 110.4px;
     height: 34.4px;
   }
+}
+/* MOBILE NAV */
+
+.mobile-nav-btn {
+  background-color: #20b303;
+  color: white;
+  font-size: 15px;
+  border: none;
+  top: 20px;
+  right: 20px;
+  position: fixed;
+  padding: 0.3rem;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0px);
+  z-index: 400;
+  display: none;
+}
+
+.mobile-nav-btn.mobileactive {
+  transform: translateX(-90px);
+}
+
+.mobile-navlinks-wrapper {
+  height: 100vh;
+  position: fixed;
+  padding: 50px 20px 0px 20px;
+  top: 0;
+  right: 0;
+  background-color: #20b303;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 400;
+  display: none;
+}
+
+.mobile-navlinks-wrapper.mobileactive {
+  transform: translateX(0px);
+}
+
+.mobile-navlinks-wrapper ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mobile-navlinks-wrapper ul li {
+  padding: 2rem 0.5rem;
+}
+
+.mobile-navlinks-wrapper a:-webkit-any-link {
+  text-decoration: none;
+}
+
+.mobile-navlinks-wrapper a {
+  color: white;
+  text-decoration-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding: 0.75rem 0;
+}
+
+/* .mobile-nav-link.activenav,
+.mobile-nav-link.activenav:hover {
+  color: #20b303;
+  border: 1px solid #20b303;
+  border-radius: 20px;
+} */
+
+.mobile-nav-link:hover {
+  transition: 0.5s;
+  /* color: #20b303; */
+  border-bottom: 3px solid #20b303;
 }
 
 /* NAV LINKS */
@@ -199,9 +268,21 @@ header {
     margin: 10px;
     padding: 5px 10px;
   }
+  .header-content-wrapper {
+    position: fixed;
+    width: 100%;
+  }
 
   .navlinks-wrapper {
     display: none;
+  }
+
+  .mobile-nav-btn {
+    display: block;
+  }
+
+  .mobile-navlinks-wrapper {
+    display: block;
   }
 }
 /* HEADER HERO */
@@ -235,7 +316,7 @@ header {
   transition: all 0.5s;
   position: relative;
   overflow: hidden;
-  z-index: 1;
+  z-index: 0;
   outline: none;
 }
 
@@ -687,7 +768,6 @@ q {
 @media (max-width: 700px) {
   .eachtestimony-section {
     margin: 30px 50px;
-    flex-direction: column-reverse;
   }
 
   .eachtestimony-section .one,
@@ -695,6 +775,10 @@ q {
   .eachtestimony-section .three,
   .eachtestimony-section .four {
     text-align: center;
+  }
+
+  .eachtestimony-brief {
+    order: -1 !important;
   }
 
   .eachtestimony-section .three {

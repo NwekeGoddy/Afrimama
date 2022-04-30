@@ -36,12 +36,12 @@ var backdrop = document.querySelector(".backdrop");
 const buyNowPayLaterButton = document.querySelector(".label-buynow");
 
 buyNowPayLaterButton.addEventListener("click", function () {
-  modal.classList.add("open");
-  backdrop.classList.add("open");
-  modal.classList.remove("close");
-  backdrop.classList.remove("close");
+  if (modal) {
+    modal.classList.add("open");
+  }
 
   setTimeout(() => {
+    backdrop.classList.add("open");
     backdrop.style.opacity = "1";
     modal.style.opacity = "1";
     modal.style.transform = "translateY(-3rem)";
@@ -49,11 +49,16 @@ buyNowPayLaterButton.addEventListener("click", function () {
 });
 
 modalbutton.addEventListener("click", function onClick() {
-  modal.classList.add("close");
-  backdrop.classList.add("close");
-  modal.classList.remove("open");
-  backdrop.classList.remove("open");
+  if (!modal) {
+    modal.classList.remove("open");
+  }
+
   setTimeout(() => {
+    backdrop.classList.remove("open");
+    // if (modal.classList.contains("open")) {
+    //   modal.classList.remove("open");
+    //   backdrop.classList.remove("open");
+    // }
     backdrop.style.opacity = "0";
     modal.style.opacity = "0";
     modal.style.transform = "translateY(-10rem)";
@@ -61,3 +66,15 @@ modalbutton.addEventListener("click", function onClick() {
 
   console.log("clicked");
 });
+
+const btn = document.querySelector(".mobile-nav-btn");
+const nav = document.querySelector(".mobile-navlinks-wrapper");
+
+btn.addEventListener("click", function () {
+  nav.classList.toggle("mobileactive");
+  btn.classList.toggle("mobileactive");
+});
+
+const mobileNavButton = document.querySelector(".mobile-nav-btn");
+
+mobileNavButton.addEventListener("click", function () {});
