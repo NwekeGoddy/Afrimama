@@ -33,10 +33,31 @@ var modalbutton = document.querySelector(".modal__actions");
 var modal = document.querySelector(".modal");
 var backdrop = document.querySelector(".backdrop");
 
+const buyNowPayLaterButton = document.querySelector(".label-buynow");
+
+buyNowPayLaterButton.addEventListener("click", function () {
+  modal.classList.add("open");
+  backdrop.classList.add("open");
+  modal.classList.remove("close");
+  backdrop.classList.remove("close");
+
+  setTimeout(() => {
+    backdrop.style.opacity = "1";
+    modal.style.opacity = "1";
+    modal.style.transform = "translateY(-3rem)";
+  }, 400);
+});
+
 modalbutton.addEventListener("click", function onClick() {
-  modal.style.display = "none";
-  backdrop.style.display = "none";
-  backdrop.style.opacity = "0";
-  modal.style.opacity = "0";
+  modal.classList.add("close");
+  backdrop.classList.add("close");
+  modal.classList.remove("open");
+  backdrop.classList.remove("open");
+  setTimeout(() => {
+    backdrop.style.opacity = "0";
+    modal.style.opacity = "0";
+    modal.style.transform = "translateY(-10rem)";
+  }, 400);
+
   console.log("clicked");
 });

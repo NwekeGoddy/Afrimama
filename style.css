@@ -17,11 +17,35 @@ html {
   scroll-behavior: smooth;
 }
 
+/* BUY NOW PAY LATER LABEL */
+
+.label-buynow {
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  bottom: 15%;
+  transform: translate(40%) rotate(270deg);
+  cursor: pointer;
+
+  background-color: #20b303;
+  padding: 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: "poppins", sans-serif;
+  width: 200px;
+}
+.label-buynow-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
 /* BACKDROP SECTION */
 .backdrop {
-  display: block;
+  display: none;
   position: fixed;
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.2s linear;
   top: 0;
   left: 0;
@@ -33,11 +57,11 @@ html {
 
 /* MODAL SECTION */
 .modal {
-  display: block;
+  display: none;
   position: fixed;
-  opacity: 1;
-  transform: translateY(-3rem);
-  transition: 1s;
+  opacity: 0;
+  transform: translateY(-10rem);
+  transition: opacity 300ms ease-in, transform 500ms ease-in;
   z-index: 201;
   top: 40%;
   left: 30%;
@@ -76,6 +100,13 @@ html {
   color: #20b303;
 }
 
+.close {
+  display: none;
+}
+
+.open {
+  display: block;
+}
 /* HEADER SECTION */
 
 header {
@@ -354,7 +385,7 @@ header {
     justify-content: flex-start;
   }
   .each-product {
-    width: 100%;
+    width: 80%;
     margin: 0 10px 10px 10px;
   }
 }
@@ -381,6 +412,17 @@ header {
   margin-bottom: 8px;
   color: #20b303;
 }
+
+.productbrief-price-kg {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.productbrief-button-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
 .productbrief-button {
   background-color: #20b303;
   color: white;
@@ -534,28 +576,28 @@ header {
   font-size: 17px;
   font-weight: 400;
   color: #807e7c;
-  text-align: right;
+  text-align: left;
 }
 
 .eachtestimony-section .two {
   font-size: 17px;
   font-weight: 400;
   color: #807e7c;
-  text-align: right;
+  text-align: left;
 }
 
 .eachtestimony-section .three {
   font-size: 50px;
   font-weight: 700;
   color: #222222;
-  text-align: right;
+  text-align: left;
 }
 
 .eachtestimony-section .four {
   font-size: 17px;
   font-weight: 400;
   color: #807e7c;
-  text-align: right;
+  text-align: left;
 }
 
 /* SLIDE FOR TESTIMONIAL */
@@ -644,12 +686,20 @@ q {
 
 @media (max-width: 700px) {
   .eachtestimony-section {
-    text-align: center;
     margin: 30px 50px;
+    flex-direction: column-reverse;
+  }
+
+  .eachtestimony-section .one,
+  .eachtestimony-section .two,
+  .eachtestimony-section .three,
+  .eachtestimony-section .four {
+    text-align: center;
   }
 
   .eachtestimony-section .three {
     font-size: 40px;
+    text-align: center;
   }
 
   .mySlides-images {
