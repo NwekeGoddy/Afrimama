@@ -382,10 +382,10 @@ header {
   }
 
   .hero-wrapper-welcome {
-    font-size: 40px;
+    font-size: 30px;
   }
   .hero-wrapper-brief {
-    font-size: 20px;
+    font-size: 19px;
   }
 
   .hero-wrapper-button {
@@ -465,6 +465,12 @@ header {
     flex-direction: column;
     justify-content: flex-start;
   }
+
+  .each-product {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
   .each-product {
     width: 80%;
     margin: 0 10px 10px 10px;
@@ -526,16 +532,16 @@ header {
 
 @media (max-width: 550px) {
   .productbrief-title {
-    font-size: 15px;
+    font-size: 14px;
   }
   .productbrief-text {
     font-size: 12px;
   }
   .productbrief-price {
-    font-size: 15px;
+    font-size: 14px;
   }
   .productbrief-button {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .each-product {
@@ -595,6 +601,14 @@ header {
 @media (max-width: 700px) {
   .aboutus-content-wrapper {
     margin: 0 20px;
+  }
+
+  .aboutus-brief-large {
+    font-size: 15px;
+  }
+
+  .aboutus-brief {
+    font-size: 12px;
   }
 }
 
@@ -682,6 +696,18 @@ header {
   font-weight: 400;
   color: #807e7c;
   text-align: left;
+}
+
+@media (max-width: 700px) {
+  .eachtestimony-section .one,
+  .eachtestimony-section .two,
+  .eachtestimony-section .four {
+    font-size: 12px;
+  }
+
+  .eachtestimony-section .three {
+    font-size: 30px;
+  }
 }
 
 /* SLIDE FOR TESTIMONIAL */
@@ -817,6 +843,7 @@ q {
   padding: 30px 90px;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 10px;
 }
 
 .footer-wrapper-minisections {
@@ -939,7 +966,7 @@ q {
   text-align: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .footer-wrapper {
     flex-direction: column;
   }
@@ -952,24 +979,36 @@ q {
     margin: 10px 0px;
   }
 
+  .footer-reserved {
+    padding: 20px 20px;
+  }
   .footer-wrapper-minisections p {
-    font-size: 12px;
+    margin-bottom: 10px;
   }
 
-  .footer-wrapper-minisections ul li {
-    font-size: 12px;
-  }
-
+  .footer-wrapper-minisections p,
+  .footer-wrapper-minisections ul li,
   .footer-connect span {
     font-size: 12px;
   }
 
-  .footer-wrapper-minisections .footer-button {
+  .footer-wrapper-minisections ul a li {
+    padding-bottom: 10px;
+  }
+
+  .footer-wrapper-minisections ul a li.mobileTestimonyList {
+    padding-bottom: 0px;
+  }
+
+  .footer-wrapper-minisections .footer-button,
+  .footer-wrapper-minisections h2 {
     font-size: 14px;
   }
 
-  .footer-wrapper-minisections h2 {
-    font-size: 14px;
+  .footer-wrapper-minisections .logo img {
+    width: 110.4px;
+    height: 34.4px;
+    margin-bottom: 10px;
   }
 }
 
