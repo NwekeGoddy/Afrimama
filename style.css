@@ -415,8 +415,8 @@ header {
 
 @media (max-width: 700px) {
   .section-headers {
-    font-size: 20px;
-    padding: 20px;
+    font-size: 15px;
+    padding: 15px;
     margin: 0px 0px 20px 0px;
   }
 }
@@ -636,12 +636,12 @@ header {
   }
 
   .missionvision-wrapper-brief {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
   }
 
   .missionvision-largetext {
-    font-size: 17px;
+    font-size: 14px;
   }
 }
 
@@ -933,7 +933,7 @@ q {
 }
 
 .footer-reserved p {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
   color: #807e7c;
   text-align: center;
@@ -953,15 +953,23 @@ q {
   }
 
   .footer-wrapper-minisections p {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .footer-wrapper-minisections ul li {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .footer-connect span {
-    font-size: 13px;
+    font-size: 12px;
+  }
+
+  .footer-wrapper-minisections .footer-button {
+    font-size: 14px;
+  }
+
+  .footer-wrapper-minisections h2 {
+    font-size: 14px;
   }
 }
 
