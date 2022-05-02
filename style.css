@@ -168,7 +168,7 @@ header {
 }
 
 .mobile-nav-btn.mobileactive {
-  transform: translateX(-85px);
+  transform: translateX(-100px);
 }
 
 .mobile-navlinks-wrapper {
