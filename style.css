@@ -11,6 +11,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
+  font-size: 16px;
 }
 
 html {
@@ -29,7 +30,7 @@ html {
 
   background-color: #20b303;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 5px 5px 0px 0px;
   text-transform: uppercase;
   font-family: "poppins", sans-serif;
   width: 200px;
@@ -41,6 +42,17 @@ html {
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  .label-buynow {
+    padding: 8px;
+    width: 200px;
+  }
+
+  .label-buynow-label {
+    font-size: 12px;
+  }
+}
+
 /* BACKDROP SECTION */
 .backdrop {
   display: none;
@@ -49,10 +61,10 @@ html {
   transition: opacity 0.2s linear;
   top: 0;
   left: 0;
-  z-index: 200;
+  z-index: 1;
   width: 100vw;
   height: 1000vh;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 /* MODAL SECTION */
@@ -148,7 +160,7 @@ header {
   top: 20px;
   right: 20px;
   position: fixed;
-  padding: 0.3rem;
+  padding: 0.3rem 0.6rem;
   transition: transform 0.3s ease-in-out;
   transform: translateX(0px);
   z-index: 400;
@@ -156,13 +168,13 @@ header {
 }
 
 .mobile-nav-btn.mobileactive {
-  transform: translateX(-90px);
+  transform: translateX(-85px);
 }
 
 .mobile-navlinks-wrapper {
   height: 100vh;
   position: fixed;
-  padding: 50px 20px 0px 20px;
+  padding: 70px 20px 0px 20px;
   top: 0;
   right: 0;
   background-color: #20b303;
@@ -198,13 +210,6 @@ header {
   border-bottom: 1px solid white;
   padding: 0.75rem 0;
 }
-
-/* .mobile-nav-link.activenav,
-.mobile-nav-link.activenav:hover {
-  color: #20b303;
-  border: 1px solid #20b303;
-  border-radius: 20px;
-} */
 
 .mobile-nav-link:hover {
   transition: 0.5s;
@@ -242,11 +247,6 @@ header {
 }
 
 @media (max-width: 700px) {
-  .logo img {
-    width: 138px;
-    height: 43px;
-    display: relative;
-  }
   .modal {
     top: 30%;
     left: 20%;
@@ -295,11 +295,11 @@ header {
   top: 27%;
 }
 .hero-wrapper-welcome {
-  font-size: 80px;
-  line-height: 1;
+  font-size: 50px;
+  line-height: 1.4;
 }
 .hero-wrapper-brief {
-  font-size: 40px;
+  font-size: 30px;
   width: 80%;
   margin: 0 auto;
 }
@@ -311,7 +311,7 @@ header {
   border-radius: 5px;
   color: white;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 20px;
   letter-spacing: 2px;
   transition: all 0.5s;
   position: relative;
@@ -404,7 +404,7 @@ header {
 /* GENERAL SECTION HEADER */
 .section-headers {
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   color: #20b303;
   padding: 30px 0;
@@ -550,14 +550,15 @@ header {
 }
 
 .aboutus-brief {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
   color: #807e7c;
   margin-bottom: 20px;
   text-align: justify;
+  line-height: 1.6;
 }
 .aboutus-brief-large {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   color: #20b303;
 }
@@ -593,7 +594,7 @@ header {
 
 @media (max-width: 700px) {
   .aboutus-content-wrapper {
-    margin: 0 50px;
+    margin: 0 20px;
   }
 }
 
@@ -615,26 +616,27 @@ header {
 } */
 
 .missionvision-wrapper-brief {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
   color: #807e7c;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: justify;
+  line-height: 1.6;
 }
 
 .missionvision-largetext {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   color: #20b303;
 }
 
 @media (max-width: 700px) {
   .missionvision-wrapper {
-    margin: 0 50px;
+    margin: 0 20px;
   }
 
   .missionvision-wrapper-brief {
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 400;
   }
 
@@ -651,31 +653,32 @@ header {
   align-items: center;
   gap: 50px;
   margin: 30px 90px;
+  line-height: 1.4;
 }
 
 .eachtestimony-section .one {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
   color: #807e7c;
   text-align: left;
 }
 
 .eachtestimony-section .two {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
   color: #807e7c;
   text-align: left;
 }
 
 .eachtestimony-section .three {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   color: #222222;
   text-align: left;
 }
 
 .eachtestimony-section .four {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
   color: #807e7c;
   text-align: left;
@@ -767,7 +770,7 @@ q {
 
 @media (max-width: 700px) {
   .eachtestimony-section {
-    margin: 30px 50px;
+    margin: 20px 20px;
   }
 
   .eachtestimony-section .one,
@@ -829,18 +832,19 @@ q {
 }
 
 .footer-wrapper-minisections .logo img {
-  width: 165px;
-  height: 54px;
+  width: 138px;
+  height: 43px;
   margin-bottom: 20px;
 }
 
 .footer-wrapper-minisections p {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
   color: #807e7c;
   margin-bottom: 20px;
   text-align: left;
   white-space: normal;
+  line-height: 1.6;
 }
 
 .footer-wrapper-minisections .footer-button {
@@ -929,7 +933,7 @@ q {
 }
 
 .footer-reserved p {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 400;
   color: #807e7c;
   text-align: center;
@@ -941,7 +945,7 @@ q {
   }
 
   .footer-wrapper {
-    padding: 20px 50px;
+    padding: 20px 20px;
   }
 
   .footer-wrapper-minisections {

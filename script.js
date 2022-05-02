@@ -75,6 +75,14 @@ btn.addEventListener("click", function () {
   btn.classList.toggle("mobileactive");
 });
 
+nav.addEventListener("click", function () {
+  nav.classList.toggle("mobileactive");
+  btn.classList.toggle("mobileactive");
+  backdrop.classList.toggle("open");
+});
 const mobileNavButton = document.querySelector(".mobile-nav-btn");
 
-mobileNavButton.addEventListener("click", function () {});
+mobileNavButton.addEventListener("click", function () {
+  backdrop.classList.toggle("open");
+  backdrop.style.opacity = "1";
+});
