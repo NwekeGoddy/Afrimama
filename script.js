@@ -29,7 +29,7 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
-var modalbutton = document.querySelector(".modal__actions");
+var modalbutton = document.querySelector(".modal__action");
 var modal = document.querySelector(".modal");
 var backdrop = document.querySelector(".backdrop");
 

@@ -75,7 +75,7 @@ html {
   transform: translateY(-10rem);
   transition: opacity 300ms ease-in, transform 500ms ease-in;
   z-index: 201;
-  top: 20%;
+  top: 30%;
   left: 30%;
   width: 40%;
   background: white;
@@ -100,7 +100,7 @@ html {
 
 .modal__action,
 .modal__other__button {
-  font-size: 14px;
+  font-size: 13px;
   margin: 10px;
   padding: 5px 10px;
   color: white;
@@ -156,6 +156,30 @@ html {
   box-shadow: 0 0 0 0.25rem #20b3034b;
 }
 
+@media (max-width: 600px) {
+  .form-wrapper {
+    padding: 0px 10px;
+  }
+
+  #form_alerts {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  .form-label {
+    font-size: 13px;
+  }
+
+  .form-group {
+    font-size: 13px;
+  }
+
+  .form-control {
+    padding: 3px 8px;
+
+    font-size: 13px;
+  }
+}
 /* HEADER SECTION */
 
 header {
