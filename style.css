@@ -109,6 +109,9 @@ html {
   border: 1px solid #20b303;
   border-radius: 5px;
 }
+.modal__action {
+  margin-top: 0px;
+}
 
 .modal__action:hover,
 .modal__other__button:hover {
@@ -157,6 +160,9 @@ html {
 }
 
 @media (max-width: 600px) {
+  .modal {
+    width: 60%;
+  }
   .form-wrapper {
     padding: 0px 10px;
   }
@@ -178,6 +184,14 @@ html {
     padding: 3px 8px;
 
     font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .modal {
+    top: 20%;
+    left: 10%;
+    width: 80%;
   }
 }
 /* HEADER SECTION */
@@ -330,7 +344,6 @@ header {
 
   .modal__action {
     font-size: 12px;
-    margin: 10px;
     padding: 5px 10px;
   }
   .header-content-wrapper {
