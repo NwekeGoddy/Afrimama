@@ -128,7 +128,8 @@ html {
   padding: 0px 25px;
 }
 
-#form_alerts {
+#form_alerts,
+.alert.alert-danger {
   padding: 10px;
   font-size: 14px;
 }
@@ -167,7 +168,8 @@ html {
     padding: 0px 10px;
   }
 
-  #form_alerts {
+  #form_alerts,
+  .alert.alert-danger {
     padding: 8px;
     font-size: 13px;
   }
@@ -338,12 +340,12 @@ header {
   }
 
   .modal__brief {
-    font-size: 12px;
+    font-size: 13px;
     padding: 10px;
   }
 
   .modal__action {
-    font-size: 12px;
+    font-size: 13px;
     padding: 5px 10px;
   }
   .header-content-wrapper {
