@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Afrimama Farms | Home</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- LINK TO BOOTSTRAP WILL REMOVE LATER -->
+    <!-- <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  /> -->
   </head>
 
   <body>
@@ -15,11 +21,54 @@
       <h2 class="modal__brief">
         How do you feel if you buy foodstuffs now and pay later?
       </h2>
-      <div class="modal__actions">
-        <button class="modal__action modal__action--but" type="button">
-          Continue Shopping
-        </button>
-      </div>
+
+      <form name="google-sheet" class="form-wrapper">
+        <div id="form_alerts"></div>
+        <div class="form-group">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter your email address"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="phone" class="form-label">Mobile Number</label>
+          <input
+            id="phone"
+            name="phone"
+            class="form-control"
+            placeholder="Enter your mobile number"
+            required
+          ></input>
+        </div>
+        <div class="modal__actions">
+          <button class="modal__other__button" type="submit">
+            Send message!
+          </button>
+          <button class="modal__other__button" type="reset">
+            Reset the form!
+          </button>
+          <button class="modal__action modal__action--but" type="button">
+            Continue Shopping
+          </button>
+        </div>
+      </form>
+    
     </div>
 
     <header>
@@ -418,6 +467,33 @@
         </section>
       </section>
     </footer>
+
+    <!-- SCRIPT FOR FORM CONNECTION TO GOOGLE SHEET -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxev9pGAz5nYq6oymifvq_AmuT9Xm_m3MgDL0imZfTjqbg37R3rC34UeztYTlHOdG-I/exec";
+      const form = document.forms["google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) =>
+            $("#form_alerts").html(
+              "<div class='alert alert-success'>Contact message sent successfully.</div>"
+            )
+          )
+          .catch((error) =>
+            $("#form_alerts").html(
+              "<div class='alert alert-danger'>Contact message not sent.</div>"
+            )
+          );
+      });
+    </script>
+
+     <!-- SCRIPT OTHER PART OF WEBPAGE -->
     <script src="script.js"></script>
   </body>
 </html>

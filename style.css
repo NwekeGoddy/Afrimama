@@ -37,7 +37,7 @@ html {
 }
 .label-buynow-label {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 300;
   color: white;
   text-align: center;
 }
@@ -75,7 +75,7 @@ html {
   transform: translateY(-10rem);
   transition: opacity 300ms ease-in, transform 500ms ease-in;
   z-index: 201;
-  top: 40%;
+  top: 20%;
   left: 30%;
   width: 40%;
   background: white;
@@ -92,14 +92,17 @@ html {
 }
 
 .modal__brief {
-  font-size: 20px;
-  padding: 20px;
+  font-size: 15px;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.95);
+  font-weight: 500;
 }
 
-.modal__action {
-  font-size: 20px;
-  margin: 20px;
-  padding: 10px 20px;
+.modal__action,
+.modal__other__button {
+  font-size: 14px;
+  margin: 10px;
+  padding: 5px 10px;
   color: white;
   background-color: #20b303;
   transition: 1s;
@@ -107,7 +110,8 @@ html {
   border-radius: 5px;
 }
 
-.modal__action:hover {
+.modal__action:hover,
+.modal__other__button:hover {
   background-color: white;
   color: #20b303;
 }
@@ -115,6 +119,43 @@ html {
 .open {
   display: block;
 }
+
+/* MODAL FORM  */
+.form-wrapper {
+  padding: 0px 25px;
+}
+
+#form_alerts {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.form-label {
+  display: block;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+
+.form-group {
+  padding: 5px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-control:focus {
+  outline: 0;
+  border: 1px solid #20b3034b;
+  box-shadow: 0 0 0 0.25rem #20b3034b;
+}
+
 /* HEADER SECTION */
 
 header {
@@ -362,11 +403,19 @@ header {
   header {
     height: 80vh;
   }
+
+  .hero-wrapper {
+    top: 30%;
+  }
 }
 
 @media (max-width: 900px) {
   header {
     height: 75vh;
+  }
+
+  .hero-wrapper {
+    top: 35%;
   }
 }
 
@@ -374,11 +423,19 @@ header {
   header {
     height: 70vh;
   }
+
+  .hero-wrapper {
+    top: 40%;
+  }
 }
 
 @media (max-width: 700px) {
   header {
     height: 70vh;
+  }
+
+  .hero-wrapper {
+    top: 43%;
   }
 
   .hero-wrapper-welcome {
