@@ -939,7 +939,7 @@ q {
   padding: 30px 90px;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 10px;
+  gap: 30px;
 }
 
 .footer-wrapper-minisections {
