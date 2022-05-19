@@ -1,3 +1,5 @@
+"use strict";
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -55,10 +57,7 @@ modalbutton.addEventListener("click", function onClick() {
 
   setTimeout(() => {
     backdrop.classList.remove("open");
-    // if (modal.classList.contains("open")) {
-    //   modal.classList.remove("open");
-    //   backdrop.classList.remove("open");
-    // }
+
     backdrop.style.opacity = "0";
     modal.style.opacity = "0";
     modal.style.transform = "translateY(-10rem)";
@@ -80,6 +79,14 @@ nav.addEventListener("click", function () {
   btn.classList.toggle("mobileactive");
   backdrop.classList.toggle("open");
 });
+
+backdrop.addEventListener("click", function () {
+  nav.classList.remove("mobileactive");
+  btn.classList.remove("mobileactive");
+  modal.classList.remove("open");
+  backdrop.classList.remove("open");
+});
+
 const mobileNavButton = document.querySelector(".mobile-nav-btn");
 
 mobileNavButton.addEventListener("click", function () {

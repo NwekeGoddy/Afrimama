@@ -4,7 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Afrimama Farms | Home</title>
+    <meta name="application-name" content="Afrimamafarms">
+
+    <!-- Primary Meta-Tags -->
+    <title>Afrimama Farms | Best Foodstuffs Prices</title>
+    <title>Evafrik - Luxury Meets Sofa</title>
+    <meta name="title" content="Afrimama Farms">
+    <meta name="description" content="Best Foodstuffs Prices">
+    <meta name="keywords" content="Foodstuffs, Garri, Rice, Yam Flour, Plaintain Floor, Fufu Floor, Odourless, Stone-free">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://afrimamafarms.com">
+    <meta property="og:title" content="Afrimama Farms">
+    <meta property="og:description" content="Best Foodstuffs Prices">
+    <meta property="og:image" content="https://afrimamafarms.com/images/IMG-20220406-WA0021.jpg">
+    <meta property="fb:app_id" content="your_app_id" />
+
+    <!-- Twitter Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@AfrimamaFarms">
+    <meta property="twitter:url" content="https://twitter.com/AfrimamaFarms">
+    <meta property="twitter:title" content="Afrimama Farms">
+    <meta property="twitter:description" content="Best Foodstuffs Prices">
+    <meta property="twitter:image" content="https://afrimamafarms.com/images/IMG-20220406-WA0021.jpg">
+    
+    <!-- Schema.org Meta Tags -->
+    <meta itemprop="name" content="Afrimama Farms">
+    <meta itemprop="description" content="Best Foodstuffs Prices">
+    <meta itemprop="image" content="https://afrimamafarms.com/images/IMG-20220406-WA0021.jpg">
+
+    <!-- LINK TO CSS SHEET(S) -->
     <link rel="stylesheet" href="style.css" />
 
     <!-- LINK TO BOOTSTRAP WILL REMOVE LATER -->
@@ -15,13 +45,17 @@
   </head>
 
   <body>
+    <!-- BACKDROP -->
     <div class="backdrop"></div>
+
+    <!--COMING SOON  MODAL -->
     <div class="modal">
       <h2 class="modal__title">Coming Soon (Food Loan)</h2>
       <h2 class="modal__brief">
         How do you feel if you buy foodstuffs now and pay later?
       </h2>
 
+      <!-- GOOGLE SHEET LINK -->
       <form name="google-sheet" class="form-wrapper">
         <div id="form_alerts"></div>
         <div class="form-group">
@@ -82,11 +116,14 @@
       <!-- NAVIGATION SECTION -->
       <section  class="header-content-wrapper">
         <div  class="logo">
-          <img
+          <a href="#home">
+            <img
             src="logos/Afrimama Logo 1.png"
             alt="Afrimama Logo"
             class="Afrimama-logo"
           />
+          </a>
+          
         </div>
 
       <!-- MOBILE NAVIGATION -->
@@ -110,8 +147,10 @@
         </nav>
       </section>
 
+      <p id="home">x</p>
+
       <section class="hero-wrapper">
-        <h2 id="home"  class="hero-wrapper-welcome">Welcome to Afrimama,</h2>
+        <h2   class="hero-wrapper-welcome">Welcome to Afrimama,</h2>
         <p class="hero-wrapper-brief">
           Get everything delivered to your doorstep at no extra cost.
         </p>
@@ -135,12 +174,13 @@
 
     <main>
      
+      <!-- PRODUCTS SECTION -->
       <section class="products-wrapper">
         <h2 id="products" class="section-headers">Products</h2>
         <section class="each-product-wrapper">
           <div class="each-product">
             <div class="product-image">
-              <img src="images/IMG-20220408-WA0035.jpg" alt="" />
+              <img src="images/IMG-20220408-WA0035.jpg" alt="Ijebu Garri Picture" />
             </div>
             <div class="productbrief">
               <h4 class="productbrief-title">Ijebu Garri</h4>
@@ -161,7 +201,7 @@
 
           <div class="each-product">
             <div class="product-image">
-              <img src="images/IMG-20220408-WA0037.jpg" alt="" />
+              <img src="images/IMG-20220408-WA0037.jpg" alt="Stone-free Ofada Rice Picture" />
             </div>
             <div class="productbrief">
               <h4 class="productbrief-title">Stone-free Ofada Rice</h4>
@@ -181,7 +221,7 @@
 
           <div class="each-product">
             <div class="product-image">
-              <img src="images/IMG-20220408-WA0038.jpg" alt="" />
+              <img src="images/IMG-20220408-WA0038.jpg" alt="Plantain Flour Picture" />
             </div>
             <div class="productbrief">
               <h4 class="productbrief-title">Plantain Flour</h4>
@@ -202,7 +242,7 @@
 
           <div class="each-product">
             <div class="product-image">
-              <img src="images/IMG-20220408-WA0036.jpg" alt="" />
+              <img src="images/IMG-20220408-WA0036.jpg" alt="Fufu Flour Picture" />
             </div>
             <div class="productbrief">
               <h4 class="productbrief-title">Fufu Flour</h4>
@@ -223,7 +263,7 @@
 
           <div class="each-product">
             <div class="product-image">
-              <img src="images/IMG-20220408-WA0039.jpg" alt="" />
+              <img src="images/IMG-20220408-WA0039.jpg" alt="Yam Flour Picture" />
             </div>
             <div class="productbrief">
               <h4 class="productbrief-title">Yam Flour</h4>
@@ -243,6 +283,7 @@
         </section>
       </section>
 
+      <!-- ABOUT US SECTION -->
       <section class="aboutus-wrapper">
         <h2 id="aboutus" class="section-headers">About Us</h2>
         <div class="aboutus-content-wrapper">
@@ -263,45 +304,46 @@
 
           <div class="aboutus-scroll">
             <div class="each-aboutus-scroll">
-              <img src="images/aboutus/Afrimama Illustration1.png" alt="" />
+              <img src="images/aboutus/Afrimama Illustration1.png" alt="Afrimama Illustration1" />
             </div>
             <div class="each-aboutus-scroll">
-              <img src="images/aboutus/Afrimama Illustration2.png" alt="" />
+              <img src="images/aboutus/Afrimama Illustration2.png" alt="Afrimama Illustration2" />
             </div>
             <div class="each-aboutus-scroll">
-              <img src="images/aboutus/Afrimama Illustration3.png" alt="" />
+              <img src="images/aboutus/Afrimama Illustration3.png" alt="Afrimama Illustration3" />
             </div>
             <div class="each-aboutus-scroll">
-              <img src="images/aboutus/Afrimama Illustration4.png" alt="" />
+              <img src="images/aboutus/Afrimama Illustration4.png" alt="Afrimama Illustration4" />
             </div>
             <div class="each-aboutus-scroll">
-              <img src="images/aboutus/Afrimama Illustration5.png" alt="" />
+              <img src="images/aboutus/Afrimama Illustration5.png" alt="Afrimama Illustration5" />
             </div>
             <div class="each-aboutus-scroll">
-              <img src="images/aboutus/Afrimama Illustration6.png" alt="" />
+              <img src="images/aboutus/Afrimama Illustration6.png" alt="Afrimama Illustration6" />
             </div>
             <div class="each-aboutus-scroll">
-              <img src="images/aboutus/Afrimama Illustration1.png" alt="" />
+              <img src="images/aboutus/Afrimama Illustration1.png" alt="Afrimama Illustration1" />
             </div>
             <div class="each-aboutus-scroll">
-              <img src="images/aboutus/Afrimama Illustration2.png" alt="" />
+              <img src="images/aboutus/Afrimama Illustration2.png" alt="Afrimama Illustration2" />
             </div>
             <div class="each-aboutus-scroll">
-              <img src="images/aboutus/Afrimama Illustration3.png" alt="" />
+              <img src="images/aboutus/Afrimama Illustration3.png" alt="Afrimama Illustration3" />
             </div>
             <div class="each-aboutus-scroll">
-              <img src="images/aboutus/Afrimama Illustration4.png" alt="" />
+              <img src="images/aboutus/Afrimama Illustration4.png" alt="Afrimama Illustration4" />
             </div>
             <div class="each-aboutus-scroll">
-              <img src="images/aboutus/Afrimama Illustration5.png" alt="" />
+              <img src="images/aboutus/Afrimama Illustration5.png" alt="Afrimama Illustration5" />
             </div>
             <div class="each-aboutus-scroll">
-              <img src="images/aboutus/Afrimama Illustration6.png" alt="" />
+              <img src="images/aboutus/Afrimama Illustration6.png" alt="Afrimama Illustration6" />
             </div>
           </div>
         </div>
       </section>
 
+      <!-- TESTIMONY SECTION -->
       <section class="testimony-wrapper">
         <h2 id="testimonies" class="section-headers">Testimony</h2>
         <div class="eachtestimony-section">
@@ -313,7 +355,7 @@
                 <img
                 class="mySlides-images"
                 src="images/testimony/F1.png"
-                alt=""
+                alt="Customer Testimony 1"
                 />
               </div>
               
@@ -321,7 +363,7 @@
                 <img
                 class="mySlides-images"
                 src="images/testimony/F2.png"
-                alt=""
+                alt="Customer Testimony 2"
                 />
               </div>
               
@@ -329,7 +371,7 @@
                 <img
                 class="mySlides-images"
                 src="images/testimony/F3.png"
-                alt=""
+                alt="Customer Testimony 3"
                 />
               </div>
 
@@ -337,7 +379,7 @@
                 <img
                 class="mySlides-images"
                 src="images/testimony/F4.png"
-                alt=""
+                alt="Customer Testimony 4"
                 />
               </div>
               
@@ -365,7 +407,7 @@
         
       </section>
       
-   
+   <!-- MISSION  AND VISSION STATEMENT SECTION -->
       <section>
         <h2 id="missionvision" class="section-headers">
           Our Mission and Vision
@@ -390,16 +432,20 @@
       </section>
     </main>
 
+    <!-- FOOTER SECTION -->
     <footer>
       <section class="footer-main">
         <section id="contacts" class="footer-wrapper">
-          <div class="footer-wrapper-minisections">
+          <div class="footer-wrapper-minisections logo">
             <div class="logo">
+            <a href="#home">
               <img
-                src="logos/Afrimama Logo 1.png"
-                alt="Afrimama Logo"
-                class="Afrimama-logo-footer"
-              />
+              src="logos/Afrimama Logo 1.png"
+              alt="Afrimama Logo"
+              class="Afrimama-logo-footer"
+            />
+            </a>
+             
             </div>
             <p>
               Tired of the everytime movement to the market feeling cheated from
@@ -410,6 +456,7 @@
             </a>
           </div>
 
+          <div class="footer-subsection">
           <div class="footer-wrapper-minisections">
             <h2>Useful links</h2>
             <ul>
@@ -458,6 +505,7 @@
               </div>
             </a>
           </div>
+        </div>
         </section>
 
         <section class="footer-reserved">
